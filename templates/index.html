@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>Fan Book Site</title>
+    <style>
+        .mypic {
+            width: 100%;
+            height: 300px;
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/jpeg;base64,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');
+            background-position: center;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .mypic > button {
+            width: 100px;
+            height: 50px;
+            background-color: transparent;
+            color: white;
+            border-radius: 100px;
+            border: 2px solid white;
+            margin-top: 10px;
+        }
+        .mypost {
+            width: 95%;
+            max-width: 500px;
+            margin: 20px auto 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px black;
+        }
+        .mypost > button {
+            margin-top: 15px;
+        }
+        .mycards {
+            width: 95%;
+            max-width: 500px;
+            margin: auto;
+        }
+        .mycards > .card {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mypic">
+        <h1>Zhao Yi Ran Fan Book</h1>
+    </div>
+    
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Enter your nick name">
+            <label for="floatingInput">Nick Name</label>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Fan Massage</label>
+          </div>
+          <div>
+            <button type="button" class="btn btn-dark">Leave a fan massage</button>
+          </div>
+    </div>
+    <div class="mycards">
+      <div class="card">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>Zhou Yi Ran (周翊然)</p>
+            <footer class="blockquote-footer">Zhao Yi Ran <cite title="Source Title">born in Chongqing, is a Chinese singer and actor. He made his debut in 2017 as a member of Yi'an Music Club, a cross-dimensional music group.</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+        <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Rekomendasi drama China Zhou Yi Ran terbaik dengan rating tertinggi.</p>
+                <footer class="blockquote-footer">Drama China <cite title="Source Title">When I Fly Towards You (2023)</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Fakta menarik Zhao Yi Ran.</p>
+                <footer class="blockquote-footer">Zhao Yi Ran merupakan <cite title="Source Title">Mantan member group musik  Yi An Musical yang debut pada 30 Maret 2017 dengan nama panggung Fang Xiangrui.</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+          
+    </div>
+</body>
+
+</html>
